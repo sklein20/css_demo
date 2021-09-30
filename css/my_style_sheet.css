@@ -1,0 +1,38 @@
+/* h1
+    {
+        color: coral;
+        background-color: darkorchid !important;
+        font-style: normal;
+        text-align: right;
+    } */
+
+h1, h2
+    {
+        color: blue;
+        background-color: orange;
+        font-style: normal;
+        text-align: right;
+    }
+
+/* This is a comment in CSS */
+
+p
+    {
+        color: #000000;
+        /* font-size: 125%; */
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        /* line-height: 75%; */
+        /* line-height: 10px; */
+    }
+
+#year
+    {
+        color:palegreen;
+    }
+
+.money
+    {
+        color: #00CCCC
+    }

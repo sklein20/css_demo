@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="css/style_sheet_2.css">
 </head>
 <body>
-    <header>
+    <header tabindex="1">
         <nav>
             <span class="logo"><img src="../images/ou-logo.jpg" alt="OU logo"></span>
             <span class="logo">Oakland University</span>
             <div class="menu_list">
-                <span class="menu_items">Menu 1</span>
+                <!-- <span class="menu_items">Menu 1</span>
                 <span class="menu_items">Menu 2</span>
-                <span class="menu_items">Menu 3</span>
+                <span class="menu_items">Menu 3</span> -->
+                <a href="../index.html">Home</a>
+                <a class="active" href="https://www.oakland.edu">CV</a>
+                <a href="https://youtube.com">Fun Facts</a>
             </div>
             
         </nav>
         <h1>Demo of CSS: Part 2</h1>
     </header>
     
-    <div>
+    <div class="animation">
         <h3>This is Div 1</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -58,6 +61,37 @@
             some form, by injected humour, or randomised words which don't look even slightly believable. If you are going 
             to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. 
         </p>
+        <p>
+            <ul>
+                <li>Unorder List Item one</li>
+                <li>item 2</li>
+            </ul>
+            <ol>
+                <li>Order list item 1</li>
+                <li>item 2</li>
+            </ol>
+        </p>
+    </div>
+
+    <div class="what">
+        <p class="idk">They’re preparing for new changes Apple has to 
+            implement after a federal judge ruled in September 
+            that Apple has to let app developers link to 
+            alternate payment systems. The ruling came as 
+            a result of a legal battle between Apple and Epic 
+            Games, the maker of Fortnite.
+
+            The new software, if adopted widely by 
+            developers and users, could threaten Apple’s 
+            profit engine. The App Store is part of the 
+            company’s services business, which reported 
+            $53.8 billion in sales during fiscal 2020 at a 
+            66% gross margin, accounting for about 20% of 
+            Apple’s revenue.</p>
+    </div>
+    
+    <div class="transform">
+        This Transforms
     </div>
 </body>
 </html>

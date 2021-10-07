@@ -1,8 +1,9 @@
 body
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: whitesmoke;
-    /* background-image: url(''); */
+    background-color: burlywood;
+    /* background-image: url('../../images/sky.jpg'); */
+    /* background-image: url('../../images/collin.gif'); */
 }
 
 .logo
@@ -13,10 +14,10 @@ body
     padding: 1%;
 }
 
-.menu_items
+a /* .menu_items */
 {
     /* float: right; */
-    border: 5px solid blue;
+    border: 2px solid white;
     margin: 2%;
     padding: 1%;
 }
@@ -33,14 +34,14 @@ nav
     height: 200px;
 }
 
-span
+/* span
 {
     background-color: rgb(16,  236, 16);
-}
+} */
 
 div
 {
-    background-color: hotpink;
+    /* background-color: hotpink; */
     width: 30%;
     display: inline-block;
     float: left;
@@ -49,6 +50,31 @@ div
     margin: 5px;
     padding: 10px;
     
+}
+
+.animation
+{
+    display: block;
+    background-color: darkorange;
+    color:white;
+    width: 35%;
+    border-radius: 5px;
+    
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+.animation:hover
+{
+    display: block;
+    background-color: blanchedalmond;
+    color: red;
+    width: 65%;
+    border-radius: 50px;
+    border-style: dotted;
+    font-size: 36px;
 }
 
 h1
@@ -70,10 +96,69 @@ h3
 p
 {
     text-align: center;
+    color: white;
 }
 
 img
 {
     width: 130px !important;
     height: 100px;
+}
+
+.active
+{
+    background-color: greenyellow;
+}
+
+a:hover
+{
+    background-color: palevioletred;
+    font-size: 30px;
+    color:cyan;
+}
+
+a:focus
+{
+    background-color: crimson;
+}
+
+ul
+{
+    list-style-type: lower-roman;
+    /* list-style-image: url('../../images/chromelogo.jpg'); */
+}
+
+.what
+{
+    background-color: lightcoral;
+    border: 5px dashed red;
+}
+
+.idk
+{
+    background-color:mediumspringgreen;
+    color:mediumvioletred;
+    border: 5px solid khaki;
+}
+
+p::first-letter
+{
+    color:darkolivegreen;
+    font-size: 32px;
+    font-family: cursive;
+    font-style: oblique;
+}
+
+.transform
+{
+    display: block;
+    border: 10px dotted;
+    margin: 1%;
+    padding: 1%;
+    background-color: seashell;
+    text-align:center;
+    width: 15%;
+    height: 30%;
+
+    transform: rotate(45deg);
 }

@@ -1,0 +1,113 @@
+/* style sheet for html file in ../html/calendar.html */
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-style: oblique;
+    /* position property */
+    position: relative;
+    /* position offset top and left */
+    top: 25%;
+    left: 2%;
+}
+
+/* div container for calender  */
+.calendar_container{
+    /* position property */
+    position: relative;
+    /* position offset top and left */
+    top: 75%;
+    left: 25%;
+    /* box model properties */
+    border: 20px;
+    margin: auto;
+    padding: 5px;
+    
+}
+
+/* basic style rules for the table */
+#calendar_table{
+    /* text color and background color */
+    color: rgb(12, 9, 2);
+    background-color: rgb(253, 247, 247);
+    /* separation between coloumns */
+    border-spacing: 2px;
+    /* making table borders */
+    border: 2px solid black;
+    /* table width */
+    width: 50%;
+    
+}
+/* apply alternate colors to tr elements within tbody using pseudo elements this excludes table header */
+tbody tr:nth-child(odd){
+    background-color: rgb(224, 215, 131);
+
+}
+tbody tr:nth-child(even){
+    background-color: lavender;
+
+}
+
+/* add some spacing to the cells  */
+#calender_table th, #calender_table td{
+    margin: 2px;
+    padding-bottom: 2px;
+}
+
+/* curve the corners of the calender row last child -- optional */
+/* tr:last-child{
+    border-radius: 0px 0px 30px 30px;
+} */
+/* select last row's first cell and curve the left side of the border -- optional */
+/* tr:last-child>td:first-child{
+    border-radius: 0 0 0 30px;
+} */
+/* select last row's last cell and curve the bottom side of the border -- optional */
+/* tr:last-child>td:last-child{
+    border-radius: 0 0 30px 0;
+} */
+
+/* give some style to the caption */
+#calendar_table caption {
+    background-color: rgb(226, 108, 108);
+    color: maroon;
+    font-weight: bolder;
+    font-size: 125%;
+    border-radius: 25px 25px 0 0;
+    text-transform: uppercase;
+    border: 2px solid black;
+
+}
+/* format table cells space alignment etc */
+#calendar_table td{
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+/* outline any holidays or special event on the calendar. create a class and assign to specific td */
+.holiday{
+    background-color: cyan;
+}
+
+/* hide calender events by default.  */
+#calendar_table span{
+    display: block;
+    text-align: left;
+    color: rgb(146, 66, 202);
+    visibility: hidden;
+
+}
+/* use psuedo classes on the td elements and span element to show event when dates are clicked with a * mark */
+/* display events either on click or hover. YOu should also add for focus */
+#calendar_table td:active>span{
+    visibility: visible;
+
+}
+#calendar_table td:hover>span{
+    visibility: visible;
+
+}
+/* try yourself - make the fonts on the dates that don't belong to october lighter - just as actual calenders do */
